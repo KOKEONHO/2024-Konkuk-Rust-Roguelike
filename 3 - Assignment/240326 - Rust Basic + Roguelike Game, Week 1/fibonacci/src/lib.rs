@@ -1,10 +1,10 @@
 pub fn fib(n: u32) -> u32 {
-    if n <= 2 {
+    if n <= 1 {
         // The base case
-        todo!("Implement this");
+        return n;
     } else {
         // The recursive case
-        todo!("Implement this");
+        return fib(n - 1) + fib(n - 2);
     }
 }
 
