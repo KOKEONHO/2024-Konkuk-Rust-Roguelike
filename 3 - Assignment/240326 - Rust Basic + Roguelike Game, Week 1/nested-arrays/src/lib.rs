@@ -8,33 +8,17 @@ mod tests {
 
     #[test]
     fn transpose_3x3_unit() {
-        let matrix = [
-            [1, 0, 0],
-            [0, 1, 0],
-            [0, 0, 1],
-        ];
+        let matrix = [[1, 0, 0], [0, 1, 0], [0, 0, 1]];
 
         let ret = transpose(matrix);
-        assert_eq!(ret, [
-            [1, 0, 0],
-            [0, 1, 0],
-            [0, 0, 1],
-        ]);
+        assert_eq!(ret, [[1, 0, 0], [0, 1, 0], [0, 0, 1],]);
     }
 
     #[test]
     fn transpose_3x3_random() {
-        let matrix = [
-            [1, 2, 3],
-            [4, 5, 6],
-            [7, 8, 9],
-        ];
+        let matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
 
         let ret = transpose(matrix);
-        assert_eq!(ret, [
-            [1, 4, 7],
-            [2, 5, 8],
-            [3, 6, 9],
-        ]);
+        assert_eq!(ret, [[1, 4, 7], [2, 5, 8], [3, 6, 9],]);
     }
 }
